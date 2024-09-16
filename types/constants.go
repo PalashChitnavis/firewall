@@ -20,3 +20,8 @@ const (
 	TransportLayerTCP = "TCP"
 	TransportLayerUDP = "UDP"
 )
+
+const (
+	PacketDirectionIn = "Incoming"
+	PacketDirectionOut = "Outgoing"
+)

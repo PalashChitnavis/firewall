@@ -9,6 +9,7 @@ import (
 
 //Extract all info from the packet
 func GetPacketInfo(packet gopacket.Packet , device pcap.Interface) (types.PacketInfo){
+	
 	var packetInfo types.PacketInfo 
 	packetInfo.DeviceName = device.Description
 	packetInfo.DeviceID = device.Name

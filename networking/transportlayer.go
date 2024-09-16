@@ -20,7 +20,7 @@ func GetTransportLayerInfo(packet gopacket.Packet , packetInfo *types.PacketInfo
 			packetInfo.DestinationPort = int(tcpPacket.DstPort)
 		case layers.LayerTypeUDP:
 			udpPacket, _ := packet.Layer(layers.LayerTypeUDP).(*layers.UDP)
-			packetInfo.NetworkLayerProtocol = types.TransportLayerUDP
+			packetInfo.TransportProtocol = types.TransportLayerUDP
 			packetInfo.SourcePort = int(udpPacket.SrcPort)
 			packetInfo.DestinationPort = int(udpPacket.DstPort)
 		}

@@ -9,6 +9,7 @@
     -source destination MAC , IP , Ports
     -check packet direction
     -map packet to process
+    -dns action for source/destination ip
     -log packet and info
     -check against policy
 3. Work on electronJS for desktop app
